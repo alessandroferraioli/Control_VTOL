@@ -1,0 +1,224 @@
+#VRML V2.0 utf8
+
+#Created with V-Realm Builder v2.0
+#Integrated Data Systems Inc.
+#www.ids-net.com
+
+
+PointLight {
+	intensity	1
+	location	0 106 0
+	radius	2.1
+}
+DEF Follow_Airplane Viewpoint {
+	position	-0.517 6.1724 26.2159
+}
+DEF Terrain Transform {
+	translation	0 -1.12 0
+	children Shape {
+		appearance	Appearance {
+			material	Material {
+				ambientIntensity	0.1
+				diffuseColor	0.9 1 1
+				specularColor	1 1 1
+			}
+
+			texture	DEF Check_Small ImageTexture {
+				url	"texture/Check_1.gif"
+			}
+
+		}
+
+		geometry	Box {
+			size	109.5 0.208 17
+		}
+
+	}
+}
+Background {
+	groundAngle	[ 0.9, 1.5, 1.57 ]
+	groundColor	[ 0 0.8 0,
+			  0.174249 0.82 0.187362,
+			  0.467223 0.82 0.445801,
+			  0.621997 0.67 0.600279 ]
+	skyAngle	[ 0.1, 1.2, 1.57 ]
+	skyColor	[ 0.76238 0.8 0.1427,
+			  0.277798 0.219779 0.7,
+			  0.222549 0.390234 0.7,
+			  0.60094 0.662637 0.69 ]
+}
+DEF FarAway_Front Viewpoint {
+	fieldOfView	1.69
+	jump	TRUE
+	position	-0.517 9.6724 26.2159
+	description	"far away front POV"
+}
+DEF Airplane Transform {
+	translation	0 0 0
+	children [ 
+	    Shape {
+		    appearance	Appearance {
+			    material	Material {
+				    ambientIntensity	0.2
+				    diffuseColor	0.0223017 0.294036 0.8
+			    }
+
+		    }
+
+		    geometry	Box {
+			    size	2 0.128 0.791
+		    }
+
+	    }
+
+	    DEF Rotor_1 Transform {
+		    translation	0.9173 -0.0832673 0.297456
+		    children Shape {
+			    appearance	Appearance {
+				    material	Material {
+					    ambientIntensity	0.2
+					    diffuseColor	0.969175 1 0.00480121
+				    }
+
+			    }
+
+			    geometry	Box {
+				    size	0.1 0.7 0.1
+			    }
+
+		    }
+	    }
+
+	    DEF Rotor_2 Transform {
+		    translation	0.925997 -0.0285266 -0.383108
+		    children Shape {
+			    appearance	Appearance {
+				    material	Material {
+					    ambientIntensity	0.2
+					    diffuseColor	0.88188 1 0.00312859
+				    }
+
+			    }
+
+			    geometry	Box {
+				    size	0.1 0.7 0.1
+			    }
+
+		    }
+	    }
+
+	    DEF Rotor_3 Transform {
+		    translation	-0.9255 0 0.3413
+		    scale	1.01816 1.01816 1.01816
+		    children Shape {
+			    appearance	Appearance {
+				    material	Material {
+					    ambientIntensity	0.2
+					    diffuseColor	0 0.8 0.8
+				    }
+
+			    }
+
+			    geometry	Box {
+				    size	0.1 0.7 0.1
+			    }
+
+		    }
+	    }
+
+	    DEF Rotor_4 Transform {
+		    translation	-0.936146 1.19209e-007 -0.298624
+		    children Shape {
+			    appearance	Appearance {
+				    material	Material {
+					    ambientIntensity	0.2
+					    diffuseColor	0.0156466 0.8 0.76881
+				    }
+
+			    }
+
+			    geometry	Box {
+				    size	0.1 0.7 0.1
+			    }
+
+		    }
+	    }
+
+	    DEF Wing Transform {
+		    children Shape {
+			    appearance	Appearance {
+				    material	Material {
+					    ambientIntensity	0.2
+					    diffuseColor	0.8 0 0
+					    emissiveColor	1 0 0
+					    specularColor	1 0 0
+				    }
+
+			    }
+
+			    geometry	Box {
+				    size	0.796 0.068 2.756
+			    }
+
+		    }
+	    }
+
+	    DEF Tail Transform {
+		    translation	-0.98 0 0
+		    children Shape {
+			    appearance	Appearance {
+				    material	Material {
+					    ambientIntensity	0.2
+					    diffuseColor	1 0.0489796 0.0489796
+				    }
+
+			    }
+
+			    geometry	Box {
+				    size	1.468 0.124 0.404
+			    }
+
+		    }
+	    }
+
+	    DEF Tail_wing Transform {
+		    translation	-1.6697 0.028 -0.0326
+		    children Shape {
+			    appearance	Appearance {
+				    material	Material {
+					    ambientIntensity	0.1
+					    diffuseColor	1 1 1
+				    }
+
+			    }
+
+			    geometry	Box {
+				    size	0.292 0.04 1.076
+			    }
+
+		    }
+	    }
+
+	    DEF Flap_tail Transform {
+		    translation	-1.96 0 0
+		    children Shape {
+			    appearance	Appearance {
+				    material	Material {
+					    ambientIntensity	0.2
+					    diffuseColor	1 0.0187089 0.754677
+				    }
+
+			    }
+
+			    geometry	Box {
+				    size	0.264 0.04 0.684
+			    }
+
+		    }
+	    }
+	]
+}
+DEF HF_POV_Close Viewpoint {
+	fieldOfView	1.49
+	position	-0.517 4.5724 8.9159
+}

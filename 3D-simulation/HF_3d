@@ -1,0 +1,69 @@
+#VRML V2.0 utf8
+
+#Created with V-Realm Builder v2.0
+#Integrated Data Systems Inc.
+#www.ids-net.com
+
+
+Transform {
+	translation	6.00815e-005 3.72529e-008 0.00593638
+	scale	3 0.1 2.2
+	children [ 
+	    Shape {
+		    appearance	Appearance {
+			    material	Material {
+			    }
+
+		    }
+
+		    geometry	Box {
+		    }
+
+	    }
+
+	    Background {
+		    groundAngle	[ 0.9, 1.5, 1.57 ]
+		    groundColor	[ 0 0.8 0,
+				      0.174249 0.82 0.187362,
+				      0.467223 0.82 0.445801,
+				      0.621997 0.67 0.600279 ]
+		    skyAngle	[ 0.1, 1.2, 1.57 ]
+		    skyColor	[ 0.76238 0.8 0.1427,
+				      0.277798 0.219779 0.7,
+				      0.222549 0.390234 0.7,
+				      0.60094 0.662637 0.69 ]
+	    }
+
+	    Fog {
+	    }
+
+	    NavigationInfo {
+	    }
+
+	    Transform {
+		    children Shape {
+			    appearance	Appearance {
+				    material	Material {
+				    }
+
+			    }
+
+			    geometry	NULL
+		    }
+	    }
+	]
+}
+Transform {
+	translation	0 1.2 -0.2
+	children Shape {
+		appearance	Appearance {
+			material	Material {
+			}
+
+		}
+
+		geometry	Sphere {
+		}
+
+	}
+}
