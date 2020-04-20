@@ -1,4 +1,3 @@
-#Thesis MSc in Control system engineering 
 ## Control of a convertible VTOL and Swarm Control
 
 
